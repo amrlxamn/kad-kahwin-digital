@@ -24,10 +24,6 @@ export default {
    ** Global CSS
    */
   css: [
-    // Load a Node.js module directly (here it's a Sass file)
-    'bulma',
-    // CSS file in the project
-    '@/assets/css/main.css',
     // SCSS file in the project
     '@/assets/css/main.scss'
   ],
@@ -63,6 +59,16 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {
+      // Run ESLint on save
+      if (ctx.isDev && ctx.isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
+    }
   }
 }
