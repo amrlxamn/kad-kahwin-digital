@@ -16,7 +16,7 @@ export default {
 
 .square-wrapper {
   position: relative;
-  top: 10rem;
+  top: 60px;
 }
 
 .square {

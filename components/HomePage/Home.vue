@@ -5,7 +5,9 @@
       >ANDA DIJEMPUT UNTUK <br />
       MERAIKAN MAJLIS</span
     >
+    <UpperLine class="upper-line" />
     <span class="name-wrapper">Amirul Azwar<br />&amp;<br />Nurul Asyikin</span>
+    <BottomLine class="bottom-line" />
     <span class="date-wrapper">AHAD, 29 DISEMBER 2019<br />12 PM - 4 PM</span>
     <a
       href="https://www.google.com/maps/place/Dewan+Alamanda+Sekysen+20/@3.0531362,101.5357508,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc4d42ece6a359:0x4233ba2f9bc619f5!8m2!3d3.0531362!4d101.5379395"
@@ -16,8 +18,15 @@
 </template>
 
 <script>
+import UpperLine from '~/assets/images/UpperLine.svg'
+import BottomLine from '~/assets/images/BottomLine.svg'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    UpperLine,
+    BottomLine
+  }
 }
 </script>
 
@@ -25,7 +34,9 @@ export default {
 @import '~/assets/css/_variables';
 
 .home-wrapper {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: $mediumMobile;
 }
 
@@ -36,8 +47,26 @@ export default {
   font-family: $fontStyle;
 
   @media (min-width: $mobileSmall) {
-    top: 10px;
+    bottom: 100px;
     font-size: $fontMediumSmall;
+  }
+}
+
+.upper-line {
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $mobileMedium) {
+    bottom: 50px;
+  }
+}
+
+.bottom-line {
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $mobileMedium) {
+    bottom: 10px;
   }
 }
 
@@ -47,7 +76,7 @@ export default {
   font-family: $fontPrimary;
 
   @media (min-width: $mobileSmall) {
-    top: 30px;
+    bottom: 80px;
     font-size: $fontSmall;
   }
 }
@@ -59,7 +88,7 @@ export default {
   color: $fontBright;
 
   @media (min-width: $mobileMedium) {
-    top: 70px;
+    bottom: 30px;
   }
 }
 
@@ -69,7 +98,7 @@ export default {
   font-family: $fontPrimary;
 
   @media (min-width: $mobileMedium) {
-    top: 100px;
+    top: 20px;
   }
 }
 
@@ -78,10 +107,10 @@ export default {
   color: $fontBrown;
   font-family: $fontPrimary;
   cursor: pointer;
-  z-index: 100;
+  z-index: 1;
 
   @media (min-width: $mobileMedium) {
-    top: 120px;
+    top: 30px;
   }
 }
 </style>

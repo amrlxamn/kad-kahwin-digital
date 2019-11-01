@@ -28,9 +28,13 @@ export default {
 .container {
   margin: 0 auto;
   padding: 0 auto;
-  max-height: 100%;
   display: flex;
   align-items: center;
   text-align: center;
+
+  @media (min-width: $mobileMedium) {
+    min-height: 41.688rem;
+    background-image: url('~assets/images/Background.png');
+  }
 }
 </style>
