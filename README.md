@@ -1,6 +1,6 @@
 # kad-kahwin-digital
 
-> Templates for sending an online invitation for wedding via messenger platform.
+> Online wedding invitation card via messenger platform created by amirul amin.
 
 ## Build Setup
 
