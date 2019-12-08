@@ -76,9 +76,18 @@ export default {
   font-family: $fontStyle;
   color: $fontBrown;
   font-size: 1.875rem;
-  margin: {
-    top: 3.75rem;
-    bottom: 3.75rem;
+
+  @media (min-width: $mobileMedium) {
+    margin: {
+      top: 3.75rem;
+      bottom: 3.75rem;
+    }
+  }
+  @media (min-width: $mobileLarge) {
+    margin: {
+      top: 5.75rem;
+      bottom: 5.75rem;
+    }
   }
 }
 </style>
