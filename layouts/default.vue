@@ -52,4 +52,34 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+.button-show {
+  display: flex;
+  width: 7.25rem;
+  height: 2.7rem;
+  margin: 1.875rem auto;
+  border-radius: 0.313rem;
+  color: #ffffff;
+  background: #41443c;
+  justify-content: space-evenly;
+}
+
+.itinerary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.125rem;
+}
+
+.image-clock {
+  width: 1.25rem;
+}
+
+hr {
+  margin: 0.938rem;
+  border: solid 0.063rem #41443c;
+  width: 12.5rem;
+  align-self: center;
+}
 </style>

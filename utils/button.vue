@@ -36,38 +36,8 @@ export default {
   margin-bottom: 1.563rem;
 }
 
-.image-clock {
-  width: 1.25rem;
-}
-
 .itinerary-name {
   font-size: 1.438rem;
   font-weight: $fontHeavy;
-}
-
-.button-show {
-  display: flex;
-  width: 7.25rem;
-  height: 2.7rem;
-  margin: 1.875rem auto;
-  border-radius: 0.313rem;
-  color: $mediumWhite;
-  background: $bgGray;
-  justify-content: space-evenly;
-}
-
-.itinerary {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  font-size: 1.125rem;
-}
-
-hr {
-  margin: 0.938rem;
-  border: solid 0.063rem $bgGray;
-  width: 12.5rem;
-  align-self: center;
 }
 </style>
