@@ -15,7 +15,6 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "coffee-loader": "^0.9.0",
-    "coffeescript": "^2.4.1",
     "nuxt": "^2.0.0",
     "nuxt-sass-resources-loader": "^2.0.5",
     "nuxt-svg-loader": "^1.0.1",

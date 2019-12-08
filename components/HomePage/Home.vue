@@ -1,31 +1,38 @@
 <template>
   <div class="home-wrapper">
     <h3 class="header-wrapper">Walimatul Urus</h3>
-    <span class="primary-wrapper"
-      >ANDA DIJEMPUT UNTUK <br />
-      MERAIKAN MAJLIS</span
+    <br />
+    <div class="groom-bride-name">
+      <UpperLine />
+      <br />
+      <span class="name-wrapper">
+        Amirul Azwar<br />&amp;<br />Nurul Asyikin</span
+      >
+      <br />
+      <BottomLine />
+    </div>
+    <br />
+    <span class="date-wrapper"
+      >AHAD, 29 DISEMBER 2019<br />11.30 AM - 4 PM</span
     >
-    <UpperLine class="upper-line" />
-    <span class="name-wrapper">Amirul Azwar<br />&amp;<br />Nurul Asyikin</span>
-    <BottomLine class="bottom-line" />
-    <span class="date-wrapper">AHAD, 29 DISEMBER 2019<br />12 PM - 4 PM</span>
-    <a
-      href="https://www.google.com/maps/place/Dewan+Alamanda+Sekysen+20/@3.0531362,101.5357508,17z/data=!3m1!4b1!4m5!3m4!1s0x31cc4d42ece6a359:0x4233ba2f9bc619f5!8m2!3d3.0531362!4d101.5379395"
-      class="venue-wrapper"
-      >DEWAN ALAMANDA<br />SEKSYEN 20, SHAH ALAM</a
-    >
+    <br />
+    <span class="venue-wrapper">DEWAN ALAMANDA<br />SEKSYEN 20, SHAH ALAM</span>
+    <br />
+    <CountdownTimer />
   </div>
 </template>
 
 <script>
 import UpperLine from '~/assets/images/UpperLine.svg'
 import BottomLine from '~/assets/images/BottomLine.svg'
+import CountdownTimer from '~/components/Countdown/App'
 
 export default {
   name: 'Home',
   components: {
     UpperLine,
-    BottomLine
+    BottomLine,
+    CountdownTimer
   }
 }
 </script>
@@ -37,80 +44,46 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: $mediumMobile;
+
+  @media (min-width: $mobileMedium) {
+    margin-top: 3.438rem;
+  }
+  @media (min-width: $mobileLarge) {
+    margin-top: 6.438rem;
+  }
 }
 
 .header-wrapper {
-  position: relative;
-  width: 100%;
   color: $fontBrown;
   font-family: $fontStyle;
 
   @media (min-width: $mobileSmall) {
-    bottom: 100px;
     font-size: $fontMediumSmall;
   }
 }
 
-.upper-line {
-  position: relative;
-  width: 100%;
-
-  @media (min-width: $mobileMedium) {
-    bottom: 50px;
-  }
-}
-
-.bottom-line {
-  position: relative;
-  width: 100%;
-
-  @media (min-width: $mobileMedium) {
-    bottom: 10px;
-  }
-}
-
-.primary-wrapper {
-  position: relative;
-  color: $fontBrown;
-  font-family: $fontPrimary;
-
-  @media (min-width: $mobileSmall) {
-    bottom: 80px;
-    font-size: $fontSmall;
-  }
+.groom-bride-name {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .name-wrapper {
-  position: relative;
-  font-size: $fontMedium;
   font-family: $fontStyle;
   color: $fontBright;
 
   @media (min-width: $mobileMedium) {
-    bottom: 30px;
+    font-size: 2.5rem;
   }
 }
 
 .date-wrapper {
-  position: relative;
   color: $fontBrown;
   font-family: $fontPrimary;
-
-  @media (min-width: $mobileMedium) {
-    top: 20px;
-  }
 }
 
 .venue-wrapper {
-  position: relative;
   color: $fontBrown;
   font-family: $fontPrimary;
-  cursor: pointer;
-  z-index: 1;
-
-  @media (min-width: $mobileMedium) {
-    top: 30px;
-  }
 }
 </style>

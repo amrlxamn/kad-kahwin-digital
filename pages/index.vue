@@ -1,23 +1,26 @@
 <template>
   <div class="container">
-    <div>
+    <div class="index-wrapper">
       <Home />
-      <Frame />
-      <Square />
+      <InvitationNote />
+      <BackgroundNote />
+      <NavBar />
     </div>
   </div>
 </template>
 
 <script>
 import Home from '~/components/HomePage/Home'
-import Frame from '~/components/Images/Frame'
-import Square from '~/utils/Square'
+import InvitationNote from '~/components/Invitation'
+import BackgroundNote from '~/components/Recitation'
+import NavBar from '~/components/Navbar'
 
 export default {
   components: {
     Home,
-    Frame,
-    Square
+    InvitationNote,
+    BackgroundNote,
+    NavBar
   }
 }
 </script>
@@ -26,15 +29,26 @@ export default {
 @import '~/assets/css/_variables';
 
 .container {
-  margin: 0 auto;
-  padding: 0 auto;
   display: flex;
   align-items: center;
   text-align: center;
+  // min-height: 100vh;
+}
+
+.index-wrapper {
+  width: 100%;
 
   @media (min-width: $mobileMedium) {
-    min-height: 41.688rem;
+    height: $heightMedium;
     background-image: url('~assets/images/Background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @media (min-width: $mobileLarge) {
+    height: $heightLarge;
+    background-image: url('~assets/images/BackgroundLarge.png');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 </style>

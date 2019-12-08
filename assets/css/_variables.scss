@@ -4,21 +4,47 @@
 // Width Screen
 $mediumMobile: 23.438rem; // 375px
 
+// Height Screen
+$heightMedium: 41.668rem; // 1332px
+$heightLarge: 46rem;
+
 // Font Family
 $fontStyle: 'Great Vibes', cursive;
 $fontPrimary: 'Abhaya Libre', serif;
+$fontInfo: 'PT Serif', serif;
 
 // Font Size
 $fontSmall: 1rem; // 16px
-$fontMediumSmall: 1.375rem; // 22px
+$fontSmallMedium: 1.375rem; // 22px
+$fontMediumSmall: 1.875rem; // 30px
 $fontMedium: 2.375rem; // 38px
 
 // Font Color
 $fontBrown: #897862;
 $fontBright: #C2B18C;
+$fontWhite: #ffffff;
+$fontGrey: #7f7f7f;
+
+// Background Navbar
+$navBar: #282928;
 
 // Screen Size
-$mobileSmall: 320px;
-$mobileMedium: 375px;
-$mobileLarge: 425px;
-$tablet: 768px;
+$mobileSmall: 20rem; // 320px
+$mobileMedium: 23.438rem; // 375px
+$mobileLarge: 25.875rem; // 414px
+
+// Font Weight
+$fontLight: 400;
+$fontMedium: 500;
+$fontHeavy: 700;
+
+// Font Style
+$fontNormal: normal;
+$fontItalic: italic;
+$fontOblique: oblique;
+
+// Button Background
+$bgGray: #41443c; 
+
+// Color
+$mediumWhite: #ffffff;
