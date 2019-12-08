@@ -86,7 +86,6 @@ export default {
   @media (min-width: $mobileLarge) {
     margin: {
       top: 5.75rem;
-      bottom: 5.75rem;
     }
   }
 }
