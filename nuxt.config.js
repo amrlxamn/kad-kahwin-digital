@@ -25,7 +25,8 @@ export default {
    */
   css: [
     // SCSS file in the project
-    '@/assets/css/main.scss'
+    '@/assets/css/main.scss',
+    '@/assets/css/_variables.scss'
   ],
   /*
    ** Plugins to load before mounting the App
