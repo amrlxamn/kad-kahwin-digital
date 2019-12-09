@@ -24,38 +24,40 @@
         </div>
       </div>
     </div>
-    <div v-show="!isCall">
-      <div class="overlay">
-        <div class="action-call">
-          <div class="row">
-            <div class="wrapper">
-              <a href="tel:0136295150">
-                <span class="name">AZMAN (AYAH PENGANTIN)</span>
-              </a>
-              <div class="icon-wrapper">
-                <img src="~/assets/images/Navigation/callblack.png" />
+    <transition name="fade" mode="in-out">
+      <div v-show="!isCall">
+        <div class="overlay">
+          <div class="action-call">
+            <div class="row">
+              <div class="wrapper">
+                <a href="tel:0136295150">
+                  <span class="name">AZMAN (AYAH PENGANTIN)</span>
+                </a>
+                <div class="icon-wrapper">
+                  <img src="~/assets/images/Navigation/callblack.png" />
+                </div>
               </div>
-            </div>
-            <div class="wrapper">
-              <a href="tel:0136687989">
-                <span class="name">AZIZAH (IBU PENGANTIN)</span>
-              </a>
-              <div class="icon-wrapper">
-                <img src="~/assets/images/Navigation/callblack.png" />
+              <div class="wrapper">
+                <a href="tel:0136687989">
+                  <span class="name">AZIZAH (IBU PENGANTIN)</span>
+                </a>
+                <div class="icon-wrapper">
+                  <img src="~/assets/images/Navigation/callblack.png" />
+                </div>
               </div>
-            </div>
-            <div class="wrapper">
-              <a href="tel:0102919656">
-                <span class="name">AMIRUL (ABANG PENGANTIN)</span>
-              </a>
-              <div class="icon-wrapper">
-                <img src="~/assets/images/Navigation/callblack.png" />
+              <div class="wrapper">
+                <a href="tel:0102919656">
+                  <span class="name">AMIRUL (ABANG PENGANTIN)</span>
+                </a>
+                <div class="icon-wrapper">
+                  <img src="~/assets/images/Navigation/callblack.png" />
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
@@ -143,8 +145,11 @@ img {
   @media (min-width: $mobileMedium) {
     height: 30rem;
   }
+  @media (min-width: $mobileAndroid) {
+    height: 27.8rem;
+  }
   @media (min-width: $mobileLarge) {
-    height: 41.313rem;
+    height: 34.3rem;
   }
 }
 
