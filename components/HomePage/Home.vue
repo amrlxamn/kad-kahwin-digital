@@ -6,7 +6,7 @@
       <UpperLine />
       <br />
       <span class="name-wrapper">
-        Amirul Azwar<br />&amp;<br />Nurul Asyikin</span
+        Amirul Azwar<br />&amp;<br />Nurul Ashikin</span
       >
       <br />
       <BottomLine />
@@ -45,11 +45,11 @@ export default {
   justify-content: center;
   flex-direction: column;
 
-  @media (min-width: $mobileMedium) {
-    margin-top: 3.438rem;
-  }
   @media (min-width: $mobileAndroid) {
     margin-top: 3.5rem;
+  }
+  @media (min-width: $mobileMedium) {
+    margin-top: 3.438rem;
   }
   @media (min-width: $mobileLarge) {
     margin-top: 6.438rem;
@@ -60,10 +60,10 @@ export default {
   color: $fontBrown;
   font-family: $fontStyle;
 
-  @media (min-width: $mobileSmall) {
+  @media (min-width: $mobileAndroid) {
     font-size: $fontMediumSmall;
   }
-  @media (min-width: $mobileAndroid) {
+  @media (min-width: $mobileSmall) {
     font-size: $fontMediumSmall;
   }
 }
@@ -78,11 +78,11 @@ export default {
   font-family: $fontStyle;
   color: $fontBright;
 
-  @media (min-width: $mobileMedium) {
-    font-size: 2.5rem;
-  }
   @media (min-width: $mobileAndroid) {
     font-size: 2.2rem;
+  }
+  @media (min-width: $mobileMedium) {
+    font-size: 2.5rem;
   }
 }
 
