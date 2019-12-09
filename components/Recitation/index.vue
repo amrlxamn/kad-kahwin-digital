@@ -45,6 +45,12 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
   }
+  @media (min-width: $mobileAndroid) {
+    height: 15.188rem;
+    background-image: url('~assets/images/FloralAndroid.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   @media (min-width: $mobileLarge) {
     height: 18rem;
     background-image: url('~assets/images/FloralLarge.png');
@@ -57,6 +63,9 @@ export default {
   width: 100%;
 
   @media (min-width: $mobileMedium) {
+    padding: 2rem;
+  }
+  @media (min-width: $mobileAndroid) {
     padding: 2rem;
   }
   @media (min-width: $mobileLarge) {
@@ -78,6 +87,12 @@ export default {
   font-size: 1.875rem;
 
   @media (min-width: $mobileMedium) {
+    margin: {
+      top: 3.75rem;
+      bottom: 3.75rem;
+    }
+  }
+  @media (min-width: $mobileAndroid) {
     margin: {
       top: 3.75rem;
       bottom: 3.75rem;

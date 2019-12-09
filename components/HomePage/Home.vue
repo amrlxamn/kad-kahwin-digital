@@ -48,6 +48,9 @@ export default {
   @media (min-width: $mobileMedium) {
     margin-top: 3.438rem;
   }
+  @media (min-width: $mobileAndroid) {
+    margin-top: 3.5rem;
+  }
   @media (min-width: $mobileLarge) {
     margin-top: 6.438rem;
   }
@@ -58,6 +61,9 @@ export default {
   font-family: $fontStyle;
 
   @media (min-width: $mobileSmall) {
+    font-size: $fontMediumSmall;
+  }
+  @media (min-width: $mobileAndroid) {
     font-size: $fontMediumSmall;
   }
 }
@@ -74,6 +80,9 @@ export default {
 
   @media (min-width: $mobileMedium) {
     font-size: 2.5rem;
+  }
+  @media (min-width: $mobileAndroid) {
+    font-size: 2.2rem;
   }
 }
 

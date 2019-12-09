@@ -62,6 +62,10 @@ export default {
     margin-top: 7.5rem;
     font-size: 0.938rem;
   }
+  @media (min-width: $mobileAndroid) {
+    margin-top: 7.5rem;
+    font-size: 0.938rem;
+  }
   @media (min-width: $mobileLarge) {
     margin-top: 9.5rem;
   }
@@ -80,6 +84,9 @@ export default {
   @media (min-width: $mobileMedium) {
     font-size: 20px;
   }
+  @media (min-width: $mobileAndroid) {
+    font-size: 20px;
+  }
 }
 
 .word-polite {
@@ -94,16 +101,32 @@ export default {
       right: 20px;
     }
   }
+  @media (min-width: $mobileAndroid) {
+    font-size: 15px;
+    padding: {
+      left: 20px;
+      right: 20px;
+    }
+  }
 }
 
 .fullname-wrapper {
   @media (min-width: $mobileMedium) {
     font-size: 20px;
   }
+  @media (min-width: $mobileAndroid) {
+    font-size: 20px;
+  }
 }
 
 .contact-info {
   @media (min-width: $mobileMedium) {
+    padding: {
+      left: 15px;
+      right: 15px;
+    }
+  }
+  @media (min-width: $mobileAndroid) {
     padding: {
       left: 15px;
       right: 15px;

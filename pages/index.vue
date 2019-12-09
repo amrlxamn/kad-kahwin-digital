@@ -44,6 +44,12 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
   }
+  @media (min-width: $mobileAndroid) {
+    height: $heightAndroid;
+    background-image: url('~assets/images/BackgroundAndroid.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   @media (min-width: $mobileLarge) {
     height: $heightLarge;
     background-image: url('~assets/images/BackgroundLarge.png');

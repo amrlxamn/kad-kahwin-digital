@@ -19,7 +19,8 @@
     "nuxt-sass-resources-loader": "^2.0.5",
     "nuxt-svg-loader": "^1.0.1",
     "pug-plain-loader": "^1.0.0",
-    "serialize-javascript": "^2.1.1"
+    "serialize-javascript": "^2.1.1",
+    "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",
