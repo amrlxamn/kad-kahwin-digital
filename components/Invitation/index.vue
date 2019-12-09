@@ -58,11 +58,11 @@ export default {
   font-weight: $fontHeavy;
   font-style: $fontItalic;
 
-  @media (min-width: $mobileMedium) {
+  @media (min-width: $mobileAndroid) {
     margin-top: 7.5rem;
     font-size: 0.938rem;
   }
-  @media (min-width: $mobileAndroid) {
+  @media (min-width: $mobileMedium) {
     margin-top: 7.5rem;
     font-size: 0.938rem;
   }
@@ -81,10 +81,10 @@ export default {
 }
 
 .parents-name {
-  @media (min-width: $mobileMedium) {
+  @media (min-width: $mobileAndroid) {
     font-size: 20px;
   }
-  @media (min-width: $mobileAndroid) {
+  @media (min-width: $mobileMedium) {
     font-size: 20px;
   }
 }
@@ -94,14 +94,14 @@ export default {
   font-style: $fontItalic;
   font-weight: $fontLight;
 
-  @media (min-width: $mobileMedium) {
+  @media (min-width: $mobileAndroid) {
     font-size: 15px;
     padding: {
       left: 20px;
       right: 20px;
     }
   }
-  @media (min-width: $mobileAndroid) {
+  @media (min-width: $mobileMedium) {
     font-size: 15px;
     padding: {
       left: 20px;
@@ -111,22 +111,22 @@ export default {
 }
 
 .fullname-wrapper {
-  @media (min-width: $mobileMedium) {
+  @media (min-width: $mobileAndroid) {
     font-size: 20px;
   }
-  @media (min-width: $mobileAndroid) {
+  @media (min-width: $mobileMedium) {
     font-size: 20px;
   }
 }
 
 .contact-info {
-  @media (min-width: $mobileMedium) {
+  @media (min-width: $mobileAndroid) {
     padding: {
       left: 15px;
       right: 15px;
     }
   }
-  @media (min-width: $mobileAndroid) {
+  @media (min-width: $mobileMedium) {
     padding: {
       left: 15px;
       right: 15px;

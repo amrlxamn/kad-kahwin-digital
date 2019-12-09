@@ -17,7 +17,7 @@
               </span>
             </a>
           </span>
-          <span class="link" @click="onInvite">
+          <span id="invite" class="link" @click="onInvite">
             <img src="~/assets/images/Navigation/invitation.png" />
             <span class="svg-text">INVITATION</span>
           </span>
@@ -71,7 +71,13 @@ export default {
   },
   methods: {
     onInvite() {
-      window.scrollTo(0, 0)
+      const navigation = document.querySelector('#invite')
+      navigation.addEventListener('click', () =>
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        })
+      )
     }
   }
 }
@@ -91,7 +97,7 @@ a {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .bottom-navigation {
@@ -134,7 +140,7 @@ img {
   height: 100%;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 11;
+  z-index: 1;
 
   &:active {
     display: flex;
@@ -143,13 +149,13 @@ img {
   }
 
   @media (min-width: $mobileMedium) {
-    height: 30rem;
+    height: 41.688rem;
   }
   @media (min-width: $mobileAndroid) {
-    height: 27.8rem;
+    height: 40rem;
   }
   @media (min-width: $mobileLarge) {
-    height: 34.3rem;
+    height: 46rem;
   }
 }
 
@@ -165,7 +171,7 @@ img {
   max-width: 420px;
   max-height: 90vh;
   overflow: scroll;
-  z-index: 10;
+  z-index: 3;
 
   &:active {
     transform: translateY(0);

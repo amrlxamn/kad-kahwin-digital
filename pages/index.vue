@@ -38,15 +38,15 @@ export default {
 .index-wrapper {
   width: 100%;
 
-  @media (min-width: $mobileMedium) {
-    height: $heightMedium;
-    background-image: url('~assets/images/Background.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
   @media (min-width: $mobileAndroid) {
     height: $heightAndroid;
     background-image: url('~assets/images/BackgroundAndroid.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @media (min-width: $mobileMedium) {
+    height: $heightMedium;
+    background-image: url('~assets/images/Background.png');
     background-repeat: no-repeat;
     background-position: center;
   }
