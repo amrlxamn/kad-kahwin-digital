@@ -18,7 +18,7 @@
     <div class="fullname-wrapper">
       <span>AMIRUL AZWAR BIN AZMAN</span><br />
       <span class="word-polite">dengan pasangannya</span><br />
-      <span>NURUL ASYIKIN BINTI AZLI</span>
+      <span>NURUL ASHIKIN BINTI AZLI</span>
     </div>
     <br />
     <div class="contact-info">
